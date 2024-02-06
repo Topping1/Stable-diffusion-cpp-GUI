@@ -1,0 +1,14 @@
+mode: txt2img
+threads: 4
+model: 
+lora_model_dir: 
+positive_prompt: 
+negative_prompt: 
+cfg_scale: 7
+height: 512
+width: 512
+steps: 20
+seed: -1
+control_model: 
+control_image: 
+control_st: 
