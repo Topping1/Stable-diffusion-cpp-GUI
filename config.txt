@@ -1,14 +1,31 @@
 mode: txt2img
 threads: 4
 model: 
+vae: 
+taesd: 
+embeddings: 
+upscale_model: 
+type: default
+init_image: 
+output_image: 
+strength: 0.75
 lora_model_dir: 
 positive_prompt: 
 negative_prompt: 
-cfg_scale: 7
+cfg_scale: 1
 height: 512
 width: 512
-steps: 20
+sampling_method: lcm
+steps: 5
+rng: cuda
 seed: -1
+batch: 
+schedule: ays
+clip_skip: -1
+vae_tiling: 
+cnet_cpu: 
+canny: 
 control_model: 
 control_image: 
-control_st: 
+control_st: 0.9
+verbose: True
