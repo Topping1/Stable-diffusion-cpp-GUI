@@ -8,9 +8,19 @@ Simple GUI for Stable-diffusion.cpp created with the Tkinter library. Just place
 ![stable-diffusion-cpp-GUI program window](screen.png)
 
 ## Features:
-- Direct editing of all options supported by Stable-diffusion.cpp (not all options implemented yet)
-- Saving of last used options in `config.txt`
-- Generated image is shown in GUI window (works but it is a little wonky)
+- Direct editing of all options supported by Stable-diffusion.cpp (not all options implemented yet).
+- Saving of last used options in `config.txt`.
+- Generated image is shown in GUI window (works but it is a little wonky).
+- Linux x64 binary included in the Releases section.
+
+## How to run
+Place stable-diffusion.cpp executable and `stable-diffusionCpp-GUI.py` in the same folder and run `python stable-diffusionCpp-GUI.py`
+
+## How to compile
+- Clone this repo with `git clone https://github.com/Topping1/Stable-diffusion-cpp-GUI` and go to the downloaded folder with `cd Stable-diffusion-cpp-GUI`.
+- Install [PyInstaller](https://pypi.org/project/pyinstaller/) package with `pip install pyinstaller`.
+- Execute `pyinstaller stable-diffusionCpp-GUI.py`,
+- Executable will be located in the `/dist/stable-diffusionCpp-GUI/` folder.
 
 ## TODO:
 - [] Tabbed interface to group similar options
