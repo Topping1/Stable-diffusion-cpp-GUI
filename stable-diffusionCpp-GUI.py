@@ -1,12 +1,21 @@
 import tkinter as tk
 from tkinter import filedialog
+from tkinter import messagebox
 import subprocess
 import os
+import sys
 from PIL import ImageTk, Image
 from tkinter import ttk
 
+if getattr(sys, 'frozen', False):
+    # Executable mode
+    application_path = os.path.dirname(sys.executable)
+else:
+    # Script mode
+    application_path = os.path.dirname(os.path.abspath(__file__))
+
 # File path for saving and loading the values
-config_file_path = os.path.join(os.path.dirname(__file__), "config.txt")
+config_file_path = os.path.join(application_path, "config.txt")
 
 # Function to save the values to a file
 def save_config():
