@@ -19,7 +19,7 @@ Place stable-diffusion.cpp executable and `stable-diffusionCpp-GUI.py` in the sa
 ## How to compile
 - Clone this repo with `git clone https://github.com/Topping1/Stable-diffusion-cpp-GUI` and go to the downloaded folder with `cd Stable-diffusion-cpp-GUI`.
 - Install [PyInstaller](https://pypi.org/project/pyinstaller/) package with `pip install pyinstaller`.
-- Execute `pyinstaller stable-diffusionCpp-GUI.py`,
+- Execute `pyinstaller --onefile stable-diffusionCpp-GUI.py`,
 - Executable will be located in the `/dist/stable-diffusionCpp-GUI/` folder.
 
 ## TODO:
